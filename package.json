@@ -1,0 +1,28 @@
+{
+  "name": "quickquizz",
+  "version": "1.0.0",
+  "description": "## Project Description  \t* An app that will display questions from a JSON state object.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mendurim/ReactFluxQuizz.git"
+  },
+  "author": "M.R",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mendurim/ReactFluxQuizz/issues"
+  },
+  "homepage": "https://github.com/Mendurim/ReactFluxQuizz#readme", 
+  "devDependencies":{
+    "babel-core":"5.8.*", 
+    "babel-loader": "5.3.*", 
+    "webpack": "1.12.*" 
+ }, 
+ "dependencies": {
+  "react":"^0.14.7", 
+  "react-dom": "^0.14.7"
+ }
+}

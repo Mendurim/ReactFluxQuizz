@@ -1,12 +1,10 @@
 import React, {Component} from 'react'; 
 import ReactDOM from 'react-dom'; 
 
-
 class Question extends Component{
 	onChange(){
 		return; 
 	}
-
 	render(){
 	const {question} = this.props; 
 		return(
@@ -28,5 +26,4 @@ class Question extends Component{
 		)
 	}
 }
-
 export default Question

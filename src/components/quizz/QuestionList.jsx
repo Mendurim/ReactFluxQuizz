@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom'; 
 import Question from './Question.jsx'; 
 
-
 class QuestionList extends Component{
 	render(){
 		return(
@@ -16,5 +15,4 @@ class QuestionList extends Component{
 		)
 	}
 }
-
 export default QuestionList

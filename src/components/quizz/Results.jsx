@@ -3,7 +3,14 @@ import ReactDOM from 'react-dom';
 
 class Results extends Component{
 	render(){
-
+		var percent = (this.props.score / this.props.questions.length * 100); 
+		if(percent > 80){
+			var message = 'Awesome Job'; 
+		}else if(percent < 80 && percent > 60){
+			var message = "You did OK"; 
+		}else{
+			var message = "You did horrible"; 
+		}
 		return(
 			
 			<div className="well">

@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom'; 
 import QuestionList from './quizz/QuestionList.jsx';
 import ScoreBox from './quizz/ScoreBox.jsx';
+import Results from './quizz/Results,jsx'; 
 class App extends Component{
 	constructor(props){
 		super(props); 
@@ -104,13 +105,16 @@ class App extends Component{
 	render(){
 		if(this.state.current > this.state.questions.length){
 			var scoreBox = ''; 
+			var results = <Results {...this.state} />
 		}else{
 			var scoreBox = ScoreBox {...this.state}
+			var results = ''; 
 		}
 		return(
 			<div>
 				{scoreBox}
 				<QuestionList {...this.state} setCurrent={this.setCurrent.bind(this)} setScore={this.setScore.bind(this)} />
+				{results}
 			</div>
 		)
 	}
